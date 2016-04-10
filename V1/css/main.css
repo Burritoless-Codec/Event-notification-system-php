@@ -1,0 +1,31 @@
+@font-face {
+    font-family: font1;
+    src: url(../fonts/AdventPro-Regular.ttf) format("truetype");   
+}
+@font-face {
+    font-family: font2;
+    src: url(../fonts/ABeeZee-Regular.ttf) format("truetype");   
+}
+.event {
+      border: thin solid #ff8c1a;
+      border-radius: 30px;
+      max-height: 300px;
+      max-width: 600px;
+      min-width: 30px;
+      min-height: 15px;
+      background-color: #ffffcc;
+      padding: 10px;
+}
+.title {
+      color: darkgray;
+      font-family: font1;
+}
+.mtext {
+      font-family: font2;
+}
+.ts {
+      padding-left: 80%;
+}
+.spacing {
+      padding: 5px;      
+}

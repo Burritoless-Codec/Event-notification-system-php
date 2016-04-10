@@ -7,4 +7,4 @@ Current Version: V1
 
 Next Version: V1.1
 
-Features: Admin backend.
+Features: Notification active setting.

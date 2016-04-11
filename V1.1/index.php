@@ -18,8 +18,6 @@
       <?php
             //To reverse the order of events from oldest to newest just change DESC to ASC.
            $sql_search = "SELECT * FROM events ORDER BY id DESC";
-            $active = ['active'];
-            $foo = 0;
             $results = mysqli_query($db, $sql_search) or die(mysql_error());
                   if(mysqli_num_rows($results) > 0) {
                         while($row = mysqli_fetch_assoc($results)) {
@@ -27,16 +25,12 @@
                               $name = $row['name'];
                               $description = $row['description'];
                               $timestmp = $row['timestmp'];
-                              
-                                    
-                              if($active == 0) {
                                   echo "<div class='event'>
                                     <h2 class='title'>$name</h2>
                                     <p class='mtext'>$description</p>
                                     <h6 class='ts'>$timestmp</h6>
                                     </div>
                                     <div class='spacing'></div>";
-                              }
                  }
            } 
       ?>      
